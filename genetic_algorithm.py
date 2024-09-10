@@ -1,11 +1,16 @@
-
+import random
 class GeneticAlgorithm:
-    def __init__(self, population_size, crossover_rate, mutation_rate, max_generations):
+    def __init__(self, population_size, crossover_rate, mutation_rate, max_generations, selection_method, crossover_method, mutation_method, replacement_strategy):
         self.population_size = population_size
         self.crossover_rate = crossover_rate
         self.mutation_rate = mutation_rate
         self.max_generations = max_generations
+        self.crossover_method = crossover_method
+        self.selection_method = selection_method
+        self.mutation_method = mutation_method
+        self.replacement_strategy = replacement_strategy
         self.population = []
+
 
     def initialize_population(self):
         # Create initial population (this is just a placeholder)

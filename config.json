@@ -1,6 +1,10 @@
 {
-    "population_size": 10,
+    "population_size": 50,
     "crossover_rate": 0.8,
-    "mutation_rate": 0.1,
-    "max_generations": 20
+    "mutation_rate": 0.05,
+    "max_generations": 100,
+    "selection_method": "roulette",
+    "crossover_method": "two_point",
+    "mutation_method": "single_gene",
+    "replacement_strategy": "elite"
 }
