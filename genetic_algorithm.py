@@ -1,4 +1,5 @@
 import random
+from eve_calc import calculate
 class GeneticAlgorithm:
     def __init__(self, population_size, crossover_rate, mutation_rate, max_generations, selection_method, crossover_method, mutation_method, replacement_strategy):
         self.population_size = population_size
@@ -38,7 +39,7 @@ class GeneticAlgorithm:
             # For now, let's just print the generation number
             print(f"Generation {generation}")
 
-            # Evaluate fitness for each individual (we'll implement the fitness function later)
+            # Evaluate fitness for each individual
             self.evaluate_population()
 
             # Select parents for crossover (placeholder for now)
@@ -50,8 +51,12 @@ class GeneticAlgorithm:
         # For now, just return the best individual (later, this will be based on fitness)
         return self.population[0]
 
+
     def evaluate_population(self):
         # Placeholder: In the future, this will calculate the fitness for each individual
+        for individual in self.population:
+            individual['fitness'] = calculate(individual['class'], individual['strength'], individual['dexterity'], individual['intelligence'], individual['vigor'], individual['constitution'], individual['height']   )
+
         print("Evaluating population...")
 
     def select_parents(self):
