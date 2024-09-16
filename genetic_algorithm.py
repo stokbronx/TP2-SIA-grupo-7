@@ -85,7 +85,7 @@ class GeneticAlgorithm:
             parents1 = selection_methods.universal_selection(self.population, self.selection_ratio*self.population_size)
         elif self.selection_method1 == "boltzmann":
             parents1 = selection_methods.boltzmann_selection(self.population, self.selection_ratio*self.population_size, self.temperature)
-        elif selection_method1 == "tournament":
+        elif self.selection_method1 == "tournament":
             parents1 = selection_methods.tournament_selection(self.population, self.selection_ratio*self.population_size)
 
         if self.selection_method2 == "elite":
@@ -96,7 +96,7 @@ class GeneticAlgorithm:
             parents2 = selection_methods.universal_selection(self.population, (1-self.selection_ratio)*self.population_size)
         elif self.selection_method2 == "boltzmann":
             parents2 = selection_methods.boltzmann_selection(self.population, (1-self.selection_ratio)*self.population_size, self.temperature)
-        elif selection_method2 == "tournament":
+        elif self.selection_method2 == "tournament":
             parents2 = selection_methods.tournament_selection(self.population, (1-self.selection_ratio)*self.population_size)
 
         combined_parents = parents1 + parents2
