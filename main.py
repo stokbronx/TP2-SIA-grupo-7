@@ -20,6 +20,7 @@ def main():
         replacement_strategy1=config['replacement_strategy1'],
         replacement_strategy2=config['replacement_strategy2'],
         replacement_ratio=config['replacement_ratio'],
+        temperature=config['temperature'],
         puntos_a_distribuir=config['puntos_a_distribuir'],
         time_limit=config['time_limit'],
         personality=config['personality']

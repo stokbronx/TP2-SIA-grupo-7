@@ -1,4 +1,5 @@
 import random
+import numpy as np
 #methods for selecting the best individuals from the population
 
 def elite_selection(population, num_elites):

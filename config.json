@@ -10,5 +10,6 @@
     "mutation_method": "single_gene",
     "replacement_strategy1": "traditional",
     "replacement_strategy2": "young_bias",
-    "replacement_ratio": 0.5
+    "replacement_ratio": 0.5,
+    "temperature": 20
 }
