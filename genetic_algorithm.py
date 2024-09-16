@@ -57,7 +57,7 @@ class GeneticAlgorithm:
             # Evaluate fitness for each individual
             self.evaluate_population()
 
-            # Select parents for crossover (placeholder for now)
+            # Select parents for crossover
             parents = self.select_parents()
 
             # Perform crossover and mutation to create the next generation (we'll add this logic later)
@@ -106,4 +106,6 @@ class GeneticAlgorithm:
     def create_next_generation(self, parents):
         # Placeholder: This function will generate the next generation by crossover and mutation
         print("Creating next generation...")
+
+
         return parents  # For now, just return the parents as the next generation
