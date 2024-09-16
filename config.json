@@ -3,8 +3,12 @@
     "crossover_rate": 0.8,
     "mutation_rate": 0.05,
     "max_generations": 100,
-    "selection_method": "roulette",
+    "selection_method1": "roulette",
+    "selection_method2": "elite",
+    "selection_ratio": 0.5,
     "crossover_method": "two_point",
     "mutation_method": "single_gene",
-    "replacement_strategy": "elite"
+    "replacement_strategy1": "traditional",
+    "replacement_strategy2": "young_bias",
+    "replacement_ratio": 0.5
 }
